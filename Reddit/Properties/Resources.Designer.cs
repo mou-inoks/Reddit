@@ -63,6 +63,16 @@ namespace Reddit.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _lock {
+            get {
+                object obj = ResourceManager.GetObject("lock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap undraw_connected_world_wuay {
             get {
                 object obj = ResourceManager.GetObject("undraw_connected_world_wuay", resourceCulture);
@@ -76,6 +86,16 @@ namespace Reddit.Properties {
         internal static System.Drawing.Bitmap undraw_connected_world_wuay1 {
             get {
                 object obj = ResourceManager.GetObject("undraw_connected_world_wuay1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user {
+            get {
+                object obj = ResourceManager.GetObject("user", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
