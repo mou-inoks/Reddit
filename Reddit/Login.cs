@@ -5,6 +5,7 @@ namespace Reddit
         public Login()
         {
             InitializeComponent();
+
         }
     }
 }
