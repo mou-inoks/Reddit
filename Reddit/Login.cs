@@ -5,7 +5,6 @@ namespace Reddit
         public Login()
         {
             InitializeComponent();
-
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -37,19 +36,30 @@ namespace Reddit
             tBoxPassword.BackColor = Color.White;
             tBoxName.BackColor = SystemColors.ControlLight;
         }
+        public void LoadForm(object form)
+        {
+            Form f = form as Form;
+            f.TopLevel = false;
+            f.Dock = DockStyle.Fill;
+            f.Show();
+        }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (tBoxName.Text == "salim" && tBoxPassword.Text == "1234")
             {
-                lblPassword.Text = "Identifiants juste ! ";
-                pnlImage.Hide();
-                pnlLoggin.Hide();
+                lblPassword.Text = "Identifiants juste ! "; 
+                LoadForm(new MainPage());
             }
             else
             {
                 lblPassword.Text = "Wrong password or User name, please try again";
             }
+        }
+
+        private void pnlLoggin_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

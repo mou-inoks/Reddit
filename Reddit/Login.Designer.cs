@@ -31,6 +31,7 @@
             this.pnlImage = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlLoggin = new System.Windows.Forms.Panel();
+            this.lblPassword = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.pnlPassword = new System.Windows.Forms.Panel();
             this.tBoxPassword = new System.Windows.Forms.TextBox();
@@ -40,7 +41,6 @@
             this.imgUser = new System.Windows.Forms.PictureBox();
             this.lblLogin = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
-            this.lblPassword = new System.Windows.Forms.Label();
             this.pnlImage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlLoggin.SuspendLayout();
@@ -84,6 +84,15 @@
             this.pnlLoggin.Name = "pnlLoggin";
             this.pnlLoggin.Size = new System.Drawing.Size(383, 501);
             this.pnlLoggin.TabIndex = 1;
+            this.pnlLoggin.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlLoggin_Paint);
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Location = new System.Drawing.Point(54, 275);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(0, 15);
+            this.lblPassword.TabIndex = 5;
             // 
             // btnLogin
             // 
@@ -115,6 +124,7 @@
             this.tBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tBoxPassword.Location = new System.Drawing.Point(54, 10);
             this.tBoxPassword.Name = "tBoxPassword";
+            this.tBoxPassword.PasswordChar = '*';
             this.tBoxPassword.Size = new System.Drawing.Size(317, 23);
             this.tBoxPassword.TabIndex = 5;
             this.tBoxPassword.Click += new System.EventHandler(this.tBoxPassword_Click);
@@ -146,7 +156,7 @@
             this.tBoxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tBoxName.Location = new System.Drawing.Point(54, 7);
             this.tBoxName.Name = "tBoxName";
-            this.tBoxName.Size = new System.Drawing.Size(317, 24);
+            this.tBoxName.Size = new System.Drawing.Size(245, 24);
             this.tBoxName.TabIndex = 5;
             this.tBoxName.Click += new System.EventHandler(this.tBoxName_Click);
             this.tBoxName.TextChanged += new System.EventHandler(this.tBoxName_TextChanged);
@@ -183,14 +193,6 @@
             this.btnExit.Text = "X";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // lblPassword
-            // 
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(54, 275);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(0, 15);
-            this.lblPassword.TabIndex = 5;
             // 
             // Login
             // 
