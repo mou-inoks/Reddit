@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿/* 
+ * Author: Salim   
+ * Date: 01.12.2022
+ * 
+ */
 
 namespace Reddit
 {
@@ -15,6 +11,28 @@ namespace Reddit
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private void btnExitTwo_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            userPage1.Hide();
+            home1.Show();
+        }
+
+        private void MainPage_Load(object sender, EventArgs e)
+        {
+            userPage1.Hide();
+        }
+
+        private void btnUserProfile_Click(object sender, EventArgs e)
+        {
+            home1.Hide();
+            userPage1.Show();
         }
     }
 }

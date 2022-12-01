@@ -1,3 +1,9 @@
+/* 
+ * Author: Salim   
+ * Date: 01.12.2022
+ * 
+ */
+
 namespace Reddit
 {
     public partial class Login : Form
@@ -36,20 +42,14 @@ namespace Reddit
             tBoxPassword.BackColor = Color.White;
             tBoxName.BackColor = SystemColors.ControlLight;
         }
-        public void LoadForm(object form)
-        {
-            Form f = form as Form;
-            f.TopLevel = false;
-            f.Dock = DockStyle.Fill;
-            f.Show();
-        }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (tBoxName.Text == "salim" && tBoxPassword.Text == "1234")
             {
                 lblPassword.Text = "Identifiants juste ! "; 
-                LoadForm(new MainPage());
+                MainPage page = new MainPage();
+                page.Show();
             }
             else
             {

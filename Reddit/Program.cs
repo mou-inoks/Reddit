@@ -1,3 +1,9 @@
+/* 
+ * Author: Salim   
+ * Date: 01.12.2022
+ * Program
+ */
+
 namespace Reddit
 {
     internal static class Program
