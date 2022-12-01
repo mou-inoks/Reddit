@@ -37,6 +37,7 @@
             this.btnUserProfile = new System.Windows.Forms.Button();
             this.userPage1 = new Reddit.UserPage();
             this.home1 = new Reddit.Home();
+            this.createPost1 = new Reddit.CreatePost();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +66,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.panel1.Controls.Add(this.lblReddit);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnCreatePost);
@@ -112,6 +114,7 @@
             this.btnCreatePost.TabIndex = 7;
             this.btnCreatePost.Text = "New Post ";
             this.btnCreatePost.UseVisualStyleBackColor = false;
+            this.btnCreatePost.Click += new System.EventHandler(this.btnCreatePost_Click);
             // 
             // btnUserProfile
             // 
@@ -142,12 +145,20 @@
             this.home1.Size = new System.Drawing.Size(558, 382);
             this.home1.TabIndex = 5;
             // 
+            // createPost1
+            // 
+            this.createPost1.Location = new System.Drawing.Point(164, 93);
+            this.createPost1.Name = "createPost1";
+            this.createPost1.Size = new System.Drawing.Size(565, 361);
+            this.createPost1.TabIndex = 6;
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(734, 501);
             this.ControlBox = false;
+            this.Controls.Add(this.createPost1);
             this.Controls.Add(this.home1);
             this.Controls.Add(this.userPage1);
             this.Controls.Add(this.panel1);
@@ -175,5 +186,6 @@
         private Button button1;
         private UserPage userPage1;
         private Home home1;
+        private CreatePost createPost1;
     }
 }

@@ -39,6 +39,7 @@
             this.lblUserName1 = new System.Windows.Forms.Label();
             this.pBoxUser = new System.Windows.Forms.PictureBox();
             this.pnlSide2 = new System.Windows.Forms.Panel();
+            this.lblHomeTitle = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxUser)).BeginInit();
@@ -46,6 +47,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.pnlSide2);
             this.panel1.Controls.Add(this.lblText2);
             this.panel1.Controls.Add(this.lblName2);
             this.panel1.Controls.Add(this.lblUserName2);
@@ -55,9 +57,9 @@
             this.panel1.Controls.Add(this.lblPostName1);
             this.panel1.Controls.Add(this.lblUserName1);
             this.panel1.Controls.Add(this.pBoxUser);
-            this.panel1.Location = new System.Drawing.Point(103, 0);
+            this.panel1.Location = new System.Drawing.Point(103, 51);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(356, 373);
+            this.panel1.Size = new System.Drawing.Size(356, 322);
             this.panel1.TabIndex = 0;
             // 
             // lblText2
@@ -151,16 +153,27 @@
             // pnlSide2
             // 
             this.pnlSide2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pnlSide2.Location = new System.Drawing.Point(100, 301);
+            this.pnlSide2.Location = new System.Drawing.Point(0, 300);
             this.pnlSide2.Name = "pnlSide2";
             this.pnlSide2.Size = new System.Drawing.Size(356, 10);
             this.pnlSide2.TabIndex = 5;
+            // 
+            // lblHomeTitle
+            // 
+            this.lblHomeTitle.AutoSize = true;
+            this.lblHomeTitle.Font = new System.Drawing.Font("Microsoft JhengHei", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblHomeTitle.Location = new System.Drawing.Point(223, 11);
+            this.lblHomeTitle.Name = "lblHomeTitle";
+            this.lblHomeTitle.Size = new System.Drawing.Size(104, 37);
+            this.lblHomeTitle.TabIndex = 9;
+            this.lblHomeTitle.Text = "Home";
+            this.lblHomeTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pnlSide2);
+            this.Controls.Add(this.lblHomeTitle);
             this.Controls.Add(this.panel1);
             this.Name = "Home";
             this.Size = new System.Drawing.Size(583, 376);
@@ -170,6 +183,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxUser)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -186,5 +200,6 @@
         private PictureBox pBox2;
         private Panel pnlSide1;
         private Panel pnlSide2;
+        private Label lblHomeTitle;
     }
 }

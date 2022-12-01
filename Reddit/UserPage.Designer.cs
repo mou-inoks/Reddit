@@ -34,6 +34,7 @@
             this.lblPassword1 = new System.Windows.Forms.Label();
             this.lblPassword2 = new System.Windows.Forms.Label();
             this.btnShowPassword = new System.Windows.Forms.Button();
+            this.lblUserPageTitle = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,18 +90,31 @@
             // 
             // btnShowPassword
             // 
+            this.btnShowPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShowPassword.Image = global::Reddit.Properties.Resources.eye;
-            this.btnShowPassword.Location = new System.Drawing.Point(369, 154);
+            this.btnShowPassword.Location = new System.Drawing.Point(375, 154);
             this.btnShowPassword.Name = "btnShowPassword";
             this.btnShowPassword.Size = new System.Drawing.Size(49, 30);
             this.btnShowPassword.TabIndex = 5;
             this.btnShowPassword.UseVisualStyleBackColor = true;
             this.btnShowPassword.Click += new System.EventHandler(this.btnShowPassword_Click);
             // 
+            // lblUserPageTitle
+            // 
+            this.lblUserPageTitle.AutoSize = true;
+            this.lblUserPageTitle.Font = new System.Drawing.Font("Microsoft JhengHei", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblUserPageTitle.Location = new System.Drawing.Point(152, 13);
+            this.lblUserPageTitle.Name = "lblUserPageTitle";
+            this.lblUserPageTitle.Size = new System.Drawing.Size(255, 37);
+            this.lblUserPageTitle.TabIndex = 6;
+            this.lblUserPageTitle.Text = "User information";
+            this.lblUserPageTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // UserPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblUserPageTitle);
             this.Controls.Add(this.btnShowPassword);
             this.Controls.Add(this.lblPassword2);
             this.Controls.Add(this.lblPassword1);
@@ -123,5 +137,6 @@
         private Label lblPassword1;
         private Label lblPassword2;
         private Button btnShowPassword;
+        private Label lblUserPageTitle;
     }
 }
