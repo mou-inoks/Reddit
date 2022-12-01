@@ -19,7 +19,8 @@ namespace Reddit
         }
 
         private void tBoxName_Click(object sender, EventArgs e)
-        {
+        {   
+            //onClick change both background 
             tBoxName.BackColor = Color.White;
             pnlName.BackColor = Color.White;
             pnlPassword.BackColor = SystemColors.ControlLight;
@@ -29,10 +30,26 @@ namespace Reddit
 
         private void tBoxPassword_Click(object sender, EventArgs e)
         {
+
+            //onClick change both background 
             pnlName.BackColor = SystemColors.ControlLight;
             pnlPassword.BackColor = Color.White;
             tBoxPassword.BackColor = Color.White;
             tBoxName.BackColor = SystemColors.ControlLight;
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (tBoxName.Text == "salim" && tBoxPassword.Text == "1234")
+            {
+                lblPassword.Text = "Identifiants juste ! ";
+                pnlImage.Hide();
+                pnlLoggin.Hide();
+            }
+            else
+            {
+                lblPassword.Text = "Wrong password or User name, please try again";
+            }
         }
     }
 }

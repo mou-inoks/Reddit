@@ -40,6 +40,7 @@
             this.imgUser = new System.Windows.Forms.PictureBox();
             this.lblLogin = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
+            this.lblPassword = new System.Windows.Forms.Label();
             this.pnlImage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlLoggin.SuspendLayout();
@@ -71,6 +72,7 @@
             // pnlLoggin
             // 
             this.pnlLoggin.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnlLoggin.Controls.Add(this.lblPassword);
             this.pnlLoggin.Controls.Add(this.btnLogin);
             this.pnlLoggin.Controls.Add(this.pnlPassword);
             this.pnlLoggin.Controls.Add(this.pnlName);
@@ -86,14 +88,15 @@
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(51)))));
-            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.btnLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(143)))), ((int)(((byte)(160)))));
-            this.btnLogin.Location = new System.Drawing.Point(54, 277);
+            this.btnLogin.Location = new System.Drawing.Point(54, 293);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(101, 40);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // pnlPassword
             // 
@@ -109,10 +112,10 @@
             // 
             this.tBoxPassword.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tBoxPassword.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tBoxPassword.Location = new System.Drawing.Point(54, 10);
             this.tBoxPassword.Name = "tBoxPassword";
-            this.tBoxPassword.Size = new System.Drawing.Size(317, 25);
+            this.tBoxPassword.Size = new System.Drawing.Size(317, 23);
             this.tBoxPassword.TabIndex = 5;
             this.tBoxPassword.Click += new System.EventHandler(this.tBoxPassword_Click);
             // 
@@ -140,10 +143,10 @@
             // 
             this.tBoxName.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tBoxName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tBoxName.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tBoxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tBoxName.Location = new System.Drawing.Point(54, 7);
             this.tBoxName.Name = "tBoxName";
-            this.tBoxName.Size = new System.Drawing.Size(317, 26);
+            this.tBoxName.Size = new System.Drawing.Size(317, 24);
             this.tBoxName.TabIndex = 5;
             this.tBoxName.Click += new System.EventHandler(this.tBoxName_Click);
             this.tBoxName.TextChanged += new System.EventHandler(this.tBoxName_TextChanged);
@@ -161,11 +164,11 @@
             // lblLogin
             // 
             this.lblLogin.AutoSize = true;
-            this.lblLogin.Font = new System.Drawing.Font("Century Gothic", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.lblLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(51)))));
             this.lblLogin.Location = new System.Drawing.Point(0, 108);
             this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(362, 39);
+            this.lblLogin.Size = new System.Drawing.Size(356, 37);
             this.lblLogin.TabIndex = 1;
             this.lblLogin.Text = "Login to your account ";
             // 
@@ -180,6 +183,14 @@
             this.btnExit.Text = "X";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Location = new System.Drawing.Point(54, 275);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(0, 15);
+            this.lblPassword.TabIndex = 5;
             // 
             // Login
             // 
@@ -221,5 +232,6 @@
         private TextBox tBoxName;
         private TextBox tBoxPassword;
         private Button btnLogin;
+        private Label lblPassword;
     }
 }
