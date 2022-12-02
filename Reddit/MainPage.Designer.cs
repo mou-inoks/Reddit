@@ -56,7 +56,7 @@
             // 
             this.btnExitTwo.FlatAppearance.BorderSize = 0;
             this.btnExitTwo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExitTwo.Location = new System.Drawing.Point(682, 0);
+            this.btnExitTwo.Location = new System.Drawing.Point(695, 0);
             this.btnExitTwo.Name = "btnExitTwo";
             this.btnExitTwo.Size = new System.Drawing.Size(40, 40);
             this.btnExitTwo.TabIndex = 2;

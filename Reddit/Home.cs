@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Reddit
+﻿namespace Reddit
 {
     public partial class Home : UserControl
     {
@@ -19,7 +9,16 @@ namespace Reddit
 
         private void Home_Load(object sender, EventArgs e)
         {
-            
+            Label test = new Label();
+            test.Name = "lblTest";
+            test.Text = "testing";  
+            test.Location = new Point(137, 88);
+            this.Controls.Add(test);
+        }
+
+        private void lblUserName1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
