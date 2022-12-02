@@ -1,8 +1,10 @@
 ﻿/* 
- * Author: Salim   
- * Date: 01.12.2022
+ * Date: 02.12.2022
+ * Author: salim 
+ * Content: Main after login 
  * 
  */
+
 
 namespace Reddit
 {
@@ -22,6 +24,7 @@ namespace Reddit
         {
             createPost1.Hide();
             userPage1.Hide();
+            home1.Refresh();
             home1.Show();
         }
 

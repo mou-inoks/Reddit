@@ -140,16 +140,16 @@
             // 
             // home1
             // 
-            this.home1.Location = new System.Drawing.Point(164, 82);
+            this.home1.Location = new System.Drawing.Point(164, 37);
             this.home1.Name = "home1";
-            this.home1.Size = new System.Drawing.Size(558, 382);
+            this.home1.Size = new System.Drawing.Size(571, 464);
             this.home1.TabIndex = 5;
             // 
             // createPost1
             // 
-            this.createPost1.Location = new System.Drawing.Point(164, 93);
+            this.createPost1.Location = new System.Drawing.Point(164, 37);
             this.createPost1.Name = "createPost1";
-            this.createPost1.Size = new System.Drawing.Size(565, 361);
+            this.createPost1.Size = new System.Drawing.Size(571, 464);
             this.createPost1.TabIndex = 6;
             // 
             // MainPage

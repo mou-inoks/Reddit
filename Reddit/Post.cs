@@ -6,11 +6,11 @@
         public string Title { get; set; }
         public string Content { get; set; }
         public string Author { get; set; }
-        List<int> listIds { get; set; } = new List<int>();
+        public List<int> listIds { get; set; } = new List<int>();
 
         public Post(string title, string content, string author)
         {
-            Id = listIds.Last() + 1;
+            Id = listIds.Count + 1;
             Title = title;
             Content = content;
             Author = author;

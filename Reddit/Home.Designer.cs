@@ -28,34 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblHomeTitle = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // lblHomeTitle
-            // 
-            this.lblHomeTitle.AutoSize = true;
-            this.lblHomeTitle.Font = new System.Drawing.Font("Microsoft JhengHei", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblHomeTitle.Location = new System.Drawing.Point(223, 11);
-            this.lblHomeTitle.Name = "lblHomeTitle";
-            this.lblHomeTitle.Size = new System.Drawing.Size(104, 37);
-            this.lblHomeTitle.TabIndex = 9;
-            this.lblHomeTitle.Text = "Home";
-            this.lblHomeTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.lblHomeTitle);
             this.Name = "Home";
             this.Size = new System.Drawing.Size(583, 376);
             this.Load += new System.EventHandler(this.Home_Load);
+            this.Enter += new System.EventHandler(this.Home_Enter);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private Label lblHomeTitle;
     }
 }
